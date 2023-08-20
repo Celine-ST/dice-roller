@@ -9,6 +9,7 @@ import SwiftUI
 
 struct singleDieRollerView: View {
     
+    @Environment(\.colorScheme) var colorScheme
     @State private var numRolled = 1
     @State private var spin = 0.0
     
@@ -27,7 +28,7 @@ struct singleDieRollerView: View {
                 Text("Roll Again")
                     .padding()
                     .background(.blue)
-                    .foregroundColor(.white)
+                    .foregroundColor(colorScheme == .dark ? .black : .white)
                     .cornerRadius(15)
                     .font(.system(size: 25, weight: .bold, design: .rounded))
                 

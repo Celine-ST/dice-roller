@@ -16,7 +16,7 @@ struct ContentView: View {
                 }
             doubleDiceRollerView()
                 .tabItem {
-                    Label("Single Die", systemImage: "dice")
+                    Label("Double Dice", systemImage: "dice")
                 }
         }
         .padding()
