@@ -9,11 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView {
+            singleDieRollerView()
+                .tabItem {
+                    Label("Single Die", systemImage: "die.face.5")
+                }
+            doubleDiceRollerView()
+                .tabItem {
+                    Label("Single Die", systemImage: "dice")
+                }
         }
         .padding()
     }
