@@ -18,6 +18,10 @@ struct ContentView: View {
                 .tabItem {
                     Label("Double Dice", systemImage: "dice")
                 }
+            customDiceRollerView()
+                .tabItem {
+                    Label("Custom Die", systemImage: "number.square.fill")
+                }
         }
         .padding()
     }
