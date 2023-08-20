@@ -9,7 +9,8 @@ import SwiftUI
 
 struct doubleDiceRollerView: View {
     @State private var numRolled = 1
-    @State private var spin = 0.0
+    @State private var spin1 = 0.0
+    @State private var spin2 = 0.0
     
     var body: some View {
         VStack {
@@ -17,16 +18,17 @@ struct doubleDiceRollerView: View {
                 Image(systemName: "die.face.\(numRolled).fill")
                     .font(.system(size:200))
                     .foregroundColor(.blue)
-                    .rotationEffect(.degrees(spin))
+                    .rotationEffect(.degrees(spin1))
                 Image(systemName: "die.face.\(numRolled).fill")
                     .font(.system(size:200))
                     .foregroundColor(.blue)
-                    .rotationEffect(.degrees(spin))
+                    .rotationEffect(.degrees(spin2))
             }
             Button {
                 withAnimation {
                     numRolled = Int.random(in: 1...6)
-                    spin += 90.0
+                    spin1 += 90.0
+                    spin2 -= 90.0
                 }
             } label: {
                 Text("Roll Again")
