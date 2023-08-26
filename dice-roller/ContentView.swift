@@ -18,6 +18,10 @@ struct ContentView: View {
                 .tabItem {
                     Label("Double Dice", systemImage: "dice")
                 }
+            coinFlipperView()
+                .tabItem {
+                    Label("Coin Flipper", systemImage: "dollarsign.circle.fill")
+                }
             customDiceRollerView()
                 .tabItem {
                     Label("Custom Die", systemImage: "number.square.fill")

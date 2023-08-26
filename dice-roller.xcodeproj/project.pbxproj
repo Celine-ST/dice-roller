@@ -14,6 +14,7 @@
 		939CE9B12A91D89C00454520 /* doubleDiceRollerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939CE9B02A91D89C00454520 /* doubleDiceRollerView.swift */; };
 		939CE9B32A91D8AC00454520 /* singleDieRollerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939CE9B22A91D8AC00454520 /* singleDieRollerView.swift */; };
 		939CE9B52A92215600454520 /* customDiceRollerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939CE9B42A92215600454520 /* customDiceRollerView.swift */; };
+		939CE9B72A9987AD00454520 /* coinFlipperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939CE9B62A9987AD00454520 /* coinFlipperView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		939CE9B02A91D89C00454520 /* doubleDiceRollerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = doubleDiceRollerView.swift; sourceTree = "<group>"; };
 		939CE9B22A91D8AC00454520 /* singleDieRollerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = singleDieRollerView.swift; sourceTree = "<group>"; };
 		939CE9B42A92215600454520 /* customDiceRollerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customDiceRollerView.swift; sourceTree = "<group>"; };
+		939CE9B62A9987AD00454520 /* coinFlipperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coinFlipperView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +61,10 @@
 			children = (
 				939CE9A02A91D4EC00454520 /* dice_rollerApp.swift */,
 				939CE9A22A91D4EC00454520 /* ContentView.swift */,
-				939CE9B42A92215600454520 /* customDiceRollerView.swift */,
 				939CE9B22A91D8AC00454520 /* singleDieRollerView.swift */,
 				939CE9B02A91D89C00454520 /* doubleDiceRollerView.swift */,
+				939CE9B62A9987AD00454520 /* coinFlipperView.swift */,
+				939CE9B42A92215600454520 /* customDiceRollerView.swift */,
 				939CE9A42A91D4ED00454520 /* Assets.xcassets */,
 				939CE9A62A91D4ED00454520 /* Preview Content */,
 			);
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				939CE9B72A9987AD00454520 /* coinFlipperView.swift in Sources */,
 				939CE9B12A91D89C00454520 /* doubleDiceRollerView.swift in Sources */,
 				939CE9B32A91D8AC00454520 /* singleDieRollerView.swift in Sources */,
 				939CE9B52A92215600454520 /* customDiceRollerView.swift in Sources */,
