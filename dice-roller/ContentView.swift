@@ -10,6 +10,10 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
+            coinFlipperView()
+                .tabItem {
+                    Label("Coin Flipper", systemImage: "dollarsign.circle.fill")
+                }
             singleDieRollerView()
                 .tabItem {
                     Label("Single Die", systemImage: "die.face.5")
@@ -17,10 +21,6 @@ struct ContentView: View {
             doubleDiceRollerView()
                 .tabItem {
                     Label("Double Dice", systemImage: "dice")
-                }
-            coinFlipperView()
-                .tabItem {
-                    Label("Coin Flipper", systemImage: "dollarsign.circle.fill")
                 }
             customDiceRollerView()
                 .tabItem {

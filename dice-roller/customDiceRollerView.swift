@@ -40,12 +40,22 @@ struct customDiceRollerView: View {
                     .cornerRadius(15)
                     .font(.system(size: 25, weight: .bold, design: .rounded))
             }
-            Text("Faces on Die")
-            HStack {
-                Text("\(maxDieNum)")
-                Stepper("BE GONE BEASTLY TEXT", value: $maxDieNum)
-                    .labelsHidden()
+            VStack {
+                Text("Faces on Die")
+                HStack {
+                    Text("\(maxDieNum)")
+                    Stepper("BE GONE BEASTLY TEXT", value: $maxDieNum)
+                        .labelsHidden()
+                        .background(Color(red: 0.8, green: 0.9, blue: 1))
+                        .cornerRadius(15)
+                }
             }
+            .font(.system(size: 20, weight: .semibold, design: .rounded))
+            .frame(width: 150, height: 125)
+            .background(.blue)
+            .foregroundColor(.white)
+            .cornerRadius(15)
+            .padding()
         }
     }
 }
