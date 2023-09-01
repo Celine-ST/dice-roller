@@ -11,6 +11,8 @@ struct coinFlipperView: View {
     @Environment(\.colorScheme) var colorScheme
     @State private var numRolled = 1
     @State private var spin = 0.0
+    @State private var numHeads = 0
+    @State private var numTails = 0
     
     var body: some View {
         VStack {
@@ -21,10 +23,16 @@ struct coinFlipperView: View {
             Text(numRolled == 1 ? "Heads" : "Tails")
                 .font(.system(size: 30, weight: .bold, design: .rounded))
                 .foregroundColor(.blue)
+            
             Button {
                 withAnimation {
                     numRolled = Int.random(in: 1...2)
                     spin += 360.0
+                    if numRolled == 1 {
+                        numHeads += 1
+                    } else {
+                        numTails += 1
+                    }
                 }
             } label: {
                 Text("Flip Again")
