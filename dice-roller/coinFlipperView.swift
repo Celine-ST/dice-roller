@@ -23,6 +23,7 @@ struct coinFlipperView: View {
             Text(numRolled == 1 ? "Heads" : "Tails")
                 .font(.system(size: 30, weight: .bold, design: .rounded))
                 .foregroundColor(.blue)
+            Text("Heads: \(numHeads), Tails: \(numTails)")
             
             Button {
                 withAnimation {
